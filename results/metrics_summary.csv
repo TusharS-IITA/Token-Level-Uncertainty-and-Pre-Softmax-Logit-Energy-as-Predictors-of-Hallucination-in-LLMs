@@ -1,0 +1,7 @@
+Method,Paradigm,AUROC,AUROC_CI,AUPRC,AUPRC_CI,ECE_10bin,Brier_Score,Latency_ms
+Naive Log-Prob (Baseline 1),White-Box (1x),0.4732,"[0.393, 0.553]",0.4649,"[0.389, 0.541]",0.328,0.312,77.48
+Content Entropy (Candidate 1),White-Box (1x),0.4256,"[0.346, 0.505]",0.4428,"[0.368, 0.518]",0.3302,0.3245,77.48
+Peak Content Entropy (Candidate 2),White-Box (1x),0.4582,"[0.378, 0.538]",0.4679,"[0.392, 0.544]",0.2222,0.2814,77.48
+Logit Energy (Candidate 3),White-Box (1x),0.5326,"[0.453, 0.613]",0.4946,"[0.419, 0.571]",0.2037,0.264,77.48
+Unified Score (Proposed),White-Box (1x),0.454,"[0.374, 0.534]",0.4558,"[0.380, 0.532]",0.237,0.2892,77.48
+Verbalized Confidence (Baseline 2),Black-Box (1x),1.0,"[1.000, 1.000]",1.0,"[1.000, 1.000]",0.2476,0.0613,227.48

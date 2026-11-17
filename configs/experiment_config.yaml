@@ -1,0 +1,27 @@
+experiment:
+  name: "aitr_lab02_token_uncertainty_truthfulqa"
+  author: "Tushar Sukumar Sarkar (PSE2026001)"
+  institution: "IIIT Allahabad"
+  seed: 42
+
+model:
+  name: "Qwen/Qwen2.5-7B-Instruct"
+  quantization: "4bit_nf4"
+  double_quant: true
+  device: "cuda"
+
+data:
+  dataset_name: "TruthfulQA"
+  path: "data/TruthfulQA.csv"
+  num_questions: 100
+  total_eval_pairs: 200
+
+methods:
+  weights:
+    alpha: 1.0   # Content entropy weight
+    beta: 1.0    # Peak content entropy weight
+    gamma: 0.1   # Logit energy scaling weight
+
+metrics:
+  bootstrap_iterations: 1000
+  ece_bins: 10
