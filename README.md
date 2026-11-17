@@ -1,4 +1,4 @@
-# AITR Lab 02: Token-Level Uncertainty & Pre-Softmax Logit Energy as Hallucination Predictors
+# Token-Level Uncertainty & Pre-Softmax Logit Energy as Hallucination Predictors
 
 **Course:** AI Tools for Research (Post-Mid-Sem Implementation Study)  
 **Student:** Tushar Sukumar Sarkar (PSE2026001), IIIT Allahabad  
